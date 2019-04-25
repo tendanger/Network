@@ -16,7 +16,7 @@ for line in open("./2", encoding='UTF-8'):
     n2 = str(strlist[1])
     #print(strlist[2])
     weight = float(strlist[2])
-    print(n1,n2,weight)
+    #print(n1,n2,weight)
 
     G.add_weighted_edges_from([(n1, n2, weight)]) #G.add_edges_from([(n1, n2)])
 
@@ -36,10 +36,10 @@ print('画出网络图像：')
 #np.savetxt('./2.txt',G_matrix,fmt='%d',newline='\n')
 #np.savetxt('/Users/kun/Desktop/2017_f3.txt',G_matrix,fmt='%s',newline='\n')
 print('dijkstra方法寻找最短路径：')
-path=nx.dijkstra_path(G, source=str(49443530), target=str(49135195))
+path=nx.dijkstra_path(G, source=str(5717326552), target=str(49358974))
 print('节点间的路径：', path)
 print('dijkstra方法寻找最短距离：')
-distance=nx.dijkstra_path_length(G, source=str(49443530), target=str(49135195))
+distance=nx.dijkstra_path_length(G, source=str(5717326552), target=str(49358974))
 print('节点间的距离为：', distance)
 
 #nx.write_pajek(G, "/Users/kun/Desktop/2017_f3.net", encoding='UTF-8')
