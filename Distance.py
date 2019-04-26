@@ -1,7 +1,5 @@
 #coding=utf-8
-
 from math import *
-
 # input Lat_A 纬度A
 # input Lng_A 经度A
 # input Lat_B 纬度B

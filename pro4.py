@@ -16,7 +16,7 @@ for line in open("./2", encoding='UTF-8'):
     n2 = str(strlist[1])
     #print(strlist[2])
     weight = float(strlist[2])
-    #print(n1,n2,weight)
+    print(type(n1))
 
     G.add_weighted_edges_from([(n1, n2, weight)]) #G.add_edges_from([(n1, n2)])
 
